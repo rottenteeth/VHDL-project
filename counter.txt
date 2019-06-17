@@ -15,7 +15,6 @@ begin
    signal liczs: td_logic_vector(3 downto 0);
    begin
       if (rising_edge(UP)) then
-         if Clock_enable_B='0' then
             licz: licz + '0001';
          end if;
 	Q <= licz;
